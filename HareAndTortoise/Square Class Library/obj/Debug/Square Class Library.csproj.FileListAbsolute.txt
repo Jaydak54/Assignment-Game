@@ -1,0 +1,10 @@
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Square Class Library\bin\Debug\Square Class Library.dll
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Square Class Library\bin\Debug\Square Class Library.pdb
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.dll
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.pdb
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.csprojResolveAssemblyReference.cache
+C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Square Class Library\bin\Debug\Square Class Library.dll
+C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Square Class Library\bin\Debug\Square Class Library.pdb
+C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.csprojResolveAssemblyReference.cache
+C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.dll
+C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.pdb

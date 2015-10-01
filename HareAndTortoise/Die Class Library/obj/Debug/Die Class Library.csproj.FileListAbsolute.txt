@@ -1,0 +1,10 @@
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.dll
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.pdb
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.csprojResolveAssemblyReference.cache
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.dll
+\\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.pdb
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 S2 2015\Class assignment skeleton\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.dll
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 S2 2015\Class assignment skeleton\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.pdb
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 S2 2015\Class assignment skeleton\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.csprojResolveAssemblyReference.cache
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 S2 2015\Class assignment skeleton\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.dll
+\\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 S2 2015\Class assignment skeleton\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.pdb
