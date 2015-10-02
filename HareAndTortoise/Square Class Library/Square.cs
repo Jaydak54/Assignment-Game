@@ -24,7 +24,6 @@ namespace Square_Class_Library {
         public string GetName()
         {
             return name;
-            //This is comment
         }
 
         public int GetNumber()
