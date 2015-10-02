@@ -16,8 +16,6 @@ namespace Square_Class_Library {
             throw new ArgumentException();
         }
 
-        //
-
         public Square(string name, int number)
         {
             this.name = name;
