@@ -13,7 +13,7 @@ namespace Square_Class_Library {
 
         public Square()
         {
-            throw new ArgumentNullException();
+            throw new ArgumentException();
         }
         public Square(string name, int number)
         {
