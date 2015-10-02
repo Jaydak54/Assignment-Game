@@ -18,6 +18,7 @@ namespace Board_Class_Library {
         public static void SetUpBoard()
         {
             gameBoard[START_SQUARE] = new Square("Start", START_SQUARE);
+            gameBoard[FINISH_SQUARE] = new Square("Finish", FINISH_SQUARE);
 
             for (int i = 1; i < FINISH_SQUARE; i++ )
             {

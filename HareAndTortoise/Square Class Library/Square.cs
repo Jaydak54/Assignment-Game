@@ -18,7 +18,6 @@ namespace Square_Class_Library {
         public Square(string name, int number)
         {
             this.name = name;
-
             this.number = number;
         }
         public string GetName()
@@ -26,9 +25,9 @@ namespace Square_Class_Library {
             return name;
         }
 
-        public void GetNumber()
+        public int GetNumber()
         {
-
+            return number;
         }
 
 
