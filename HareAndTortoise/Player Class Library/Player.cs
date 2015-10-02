@@ -19,15 +19,18 @@ namespace Player_Class_Library
 
         public Player()
         {
-            throw new ArgumentException();
+            throw new ArgumentException("Class instantiation syntax is invalid.");
         }
 
         public Player(string name, Square location)
         {
+            this.name = name;
+            this.location = location;
         }
 
         public void SetName(string name)
         {
+            this.name = name;
         }
 
         public string GetName()
@@ -37,6 +40,7 @@ namespace Player_Class_Library
 
         public void SetLocation(Square location)
         {
+            this.location = location;
         }
 
         public Square GetLocation()
