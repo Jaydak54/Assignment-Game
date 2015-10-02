@@ -26,9 +26,9 @@ namespace Square_Class_Library {
             return name;
         }
 
-        public void GetNumber()
+        public int GetNumber()
         {
-
+            return number;
         }
 
 

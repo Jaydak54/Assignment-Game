@@ -43,3 +43,6 @@ C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\HareAndTortoise\o
 C:\Users\Jon\Desktop\HareAndTortoise\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe.config
 C:\Users\Jon\Desktop\HareAndTortoise\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.exe
 C:\Users\Jon\Desktop\HareAndTortoise\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe.config
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.exe
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.pdb
