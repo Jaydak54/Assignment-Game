@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Player Class Library">
+      <HintPath>..\Player Class Library\bin\Debug\Player Class Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Square Class Library">
+      <HintPath>..\Square Class Library\bin\Debug\Square Class Library.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

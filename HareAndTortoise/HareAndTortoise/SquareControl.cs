@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Square_Class_Library;
+using Player_Class_Library;
 
 
 namespace HareAndTortoise {
     public partial class SquareControl : PictureBox {
-/*
+
         public const int SQUARE_SIZE = 100;
 
         private Square square;  // A reference to the corresponding square object
@@ -117,6 +118,5 @@ namespace HareAndTortoise {
                 }
             }//endfor
         }
-*/
     }
 }

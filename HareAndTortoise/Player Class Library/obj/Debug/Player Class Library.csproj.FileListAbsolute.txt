@@ -8,3 +8,10 @@
 \\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.csprojResolveAssemblyReference.cache
 \\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.dll
 \\staffhome.qut.edu.au\staffgroupr$\roggenka\Desktop\CAB201 S2 2015\Class assignment sandpit\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Player Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Player Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Square Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Square Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.csprojResolveAssemblyReference.cache
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.pdb
