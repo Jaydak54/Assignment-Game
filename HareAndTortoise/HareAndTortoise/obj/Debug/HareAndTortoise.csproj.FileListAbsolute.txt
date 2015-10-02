@@ -46,3 +46,9 @@ C:\Users\Jon\Desktop\HareAndTortoise\HareAndTortoise\HareAndTortoise\obj\Debug\H
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe.config
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.exe
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.csprojResolveAssemblyReference.cache
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.HareAndTortoise_Form.resources
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.Properties.Resources.resources
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.csproj.GenerateResource.Cache
