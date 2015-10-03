@@ -71,3 +71,5 @@ C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\De
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.HareAndTortoise_Form.resources
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.Properties.Resources.resources
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.csproj.GenerateResource.Cache
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Board Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Board Class Library.pdb
