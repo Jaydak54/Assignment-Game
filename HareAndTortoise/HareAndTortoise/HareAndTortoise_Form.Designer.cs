@@ -39,6 +39,10 @@
             // splitContainer.Panel1
             // 
             this.splitContainer.Panel1.Controls.Add(this.gameBoardPanel);
+            // 
+            // splitContainer.Panel2
+            // 
+            this.splitContainer.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer_Panel2_Paint);
             this.splitContainer.Size = new System.Drawing.Size(884, 662);
             this.splitContainer.SplitterDistance = 665;
             this.splitContainer.TabIndex = 0;

@@ -44,12 +44,21 @@ namespace HareAndTortoise {
         private static void MapSquareToTablePanel(int number, out int column, out int row)
         {
 
+            column = 0;
+            row = 0;
             column = number % NUM_OF_COLUMNS;
-            row = NUM_OF_ROWS - ((number - column) / NUM_OF_COLUMNS);
-            //bool odd_row = row % 2 == 0;
-            //if (odd_row) {
-            //    column = NUM_OF_COLUMNS - column;
-            //}
+            row = number / NUM_OF_COLUMNS;
+            bool odd_row = row % 2 == 0; // check for every second row
+            if (odd_row)
+            {
+                column = number - row * NUM_OF_COLUMNS; // set column if odd row
+            }
+            else
+            {
+                column = NUM_OF_COLUMNS * (row + 1) - 1 - number; // set column for every other row
+            }
+
+            row = NUM_OF_ROWS - 1 - row; // flip the board so square progress the opposite way
         }
 
         private void ResizeGameBoard() {
@@ -64,6 +73,9 @@ namespace HareAndTortoise {
             gameBoardPanel.Size = new Size(desiredWidth, desiredHeight);
         } //end ResizeGameBoard
 
+        private void splitContainer_Panel2_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }//end class 
 } //end namespace
