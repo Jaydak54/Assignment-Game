@@ -43,15 +43,11 @@ namespace HareAndTortoise {
 
         private static void MapSquareToTablePanel(int number, out int column, out int row)
         {
-
-            column = 0;
-            row = 0;
-            column = number % NUM_OF_COLUMNS;
             row = number / NUM_OF_COLUMNS;
             bool odd_row = row % 2 == 0; // check for every second row
             if (odd_row)
             {
-                column = number - row * NUM_OF_COLUMNS; // set column if odd row
+                column = number % NUM_OF_COLUMNS; // set column if odd row
             }
             else
             {
