@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Player Class Library">
+      <HintPath>..\Player Class Library\bin\Debug\Player Class Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Square Class Library">
+      <HintPath>..\Square Class Library\bin\Debug\Square Class Library.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -80,6 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Board Class Library\Board Class Library.csproj">
+      <Project>{dab18cd4-8792-41c5-b03e-b0386211c58a}</Project>
+      <Name>Board Class Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

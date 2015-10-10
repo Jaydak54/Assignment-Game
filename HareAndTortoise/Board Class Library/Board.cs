@@ -60,7 +60,7 @@ namespace Board_Class_Library {
             return gameBoard[0];
         }
 
-        public static Square NextSqaure(int number)
+        public static Square NextSquare(int number)
         {
             if (number < FINISH_SQUARE)
             {

@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Square_Class_Library;
+using Player_Class_Library;
 
 
 namespace HareAndTortoise {
     public partial class SquareControl : PictureBox {
-/*
+
         public const int SQUARE_SIZE = 100;
 
         private Square square;  // A reference to the corresponding square object
@@ -60,7 +61,7 @@ namespace HareAndTortoise {
                 textBrush = Brushes.Red;
             } else if (square is Chance_Square) {
                 LoadImageFromFile("monster-green.png"); 
-            } else if (square.Name == "Finish") {
+            } else if (square.GetName() == "Finish") {
                 LoadImageFromFile("checkered-flag.png");
             } else {
                 // No image needed.
@@ -81,7 +82,7 @@ namespace HareAndTortoise {
             if (Image != null)
                 e.Graphics.DrawImage(Image, e.ClipRectangle);
 
-            string name = square.Name;
+            string name = square.GetName();
 
             // Create rectangle for drawing.
             float textWidth = textFont.Size * name.Length;
@@ -112,11 +113,10 @@ namespace HareAndTortoise {
                     int yPosition = i / PLAYER_TOKENS_PER_ROW;
                     int xPixels = xPosition * (PLAYER_TOKEN_SIZE + PLAYER_TOKEN_SPACING);
                     int yPixels = yPosition * (PLAYER_TOKEN_SIZE + PLAYER_TOKEN_SPACING);
-                    Brush playerTokenColour = players[i].PlayerTokenColour;
+                    Brush playerTokenColour = players[i].GetPlayerTokenColour();
                     e.Graphics.FillEllipse(playerTokenColour, xPixels, yPixels, PLAYER_TOKEN_SIZE, PLAYER_TOKEN_SIZE);
                 }
             }//endfor
         }
-*/
     }
 }
