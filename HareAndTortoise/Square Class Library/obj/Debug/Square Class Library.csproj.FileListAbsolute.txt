@@ -10,6 +10,5 @@ C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Square Class Libr
 C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.pdb
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Square Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Square Class Library.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.csprojResolveAssemblyReference.cache
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.pdb
