@@ -13,6 +13,8 @@ namespace Player_Class_Library
     {
 
         private string name;
+        private int money;
+        private bool hasWon;
         private Square location;
         private Image playerTokenImage;
         private Brush playerTokenColour;
@@ -28,43 +30,81 @@ namespace Player_Class_Library
             this.location = location;
         }
 
-        public void SetName(string name)
+        public string Name
         {
-            this.name = name;
-        }
-
-        public string GetName()
-        {
-            return name;
-        }
-
-        public void SetLocation(Square location)
-        {
-            this.location = location;
-        }
-
-        public Square GetLocation()
-        {
-            return location;
-        }
-
-        public Image GetPlayerTokenImage()
-        {
-            return playerTokenImage;
-        }
-
-        public Brush GetPlayerTokenColour()
-        {
-            return playerTokenColour;
-        }
-
-        public void SetPlayerTokenColour(Brush value){
-            playerTokenColour = value;
-            playerTokenImage = new Bitmap(1, 1);
-            using(Graphics g = Graphics.FromImage(playerTokenImage)) {
-                g.FillRectangle(playerTokenColour, 0, 0, 1, 1);
+            get
+            {
+                return name;
             }
-        } //end SetPlayerTokenColour
+            set
+            {
+                name = value;
+            }
+        }// End Name property
+
+        public int Money
+        {
+            get
+            {
+                return money;
+            }
+            set
+            {
+                money = value;
+            }
+        }// End Money property
+
+        public bool HasWon
+        {
+            get 
+            {
+                return hasWon;
+            }
+            set
+            {
+                hasWon = value;
+            }
+        }// End HasWon property
+
+        public Square Location
+        {
+            get
+            {
+                return location;
+            }
+            set
+            {
+                location = value;
+            }
+        }// End Location property
+
+        public Image PlayerTokenImage
+        {
+            get 
+            {
+                return playerTokenImage;
+            }
+            set
+            {
+                playerTokenImage = value;
+            }
+        }// End PlayerTokenImage property
+
+        public Brush PlayerTokenColour
+        {
+            get 
+            {
+                return playerTokenColour;
+            }
+            set
+            {
+                playerTokenColour = value;
+                playerTokenImage = new Bitmap(1, 1);
+                using (Graphics g = Graphics.FromImage(playerTokenImage)) {
+                    g.FillRectangle(playerTokenColour, 0, 0, 1, 1);
+                }
+            }
+        }// End PlayerTokenColour property
     }
 
 

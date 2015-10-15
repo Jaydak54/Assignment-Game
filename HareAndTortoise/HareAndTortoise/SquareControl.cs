@@ -113,7 +113,7 @@ namespace HareAndTortoise {
                     int yPosition = i / PLAYER_TOKENS_PER_ROW;
                     int xPixels = xPosition * (PLAYER_TOKEN_SIZE + PLAYER_TOKEN_SPACING);
                     int yPixels = yPosition * (PLAYER_TOKEN_SIZE + PLAYER_TOKEN_SPACING);
-                    Brush playerTokenColour = players[i].GetPlayerTokenColour();
+                    Brush playerTokenColour = players[i].PlayerTokenColour;
                     e.Graphics.FillEllipse(playerTokenColour, xPixels, yPixels, PLAYER_TOKEN_SIZE, PLAYER_TOKEN_SIZE);
                 }
             }//endfor
