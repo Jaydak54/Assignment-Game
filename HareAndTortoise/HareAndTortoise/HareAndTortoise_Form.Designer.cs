@@ -26,6 +26,9 @@
             this.components = new System.ComponentModel.Container();
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.gameBoardPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnDice = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -33,9 +36,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnDice = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.playerTokenImageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moneyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -101,15 +101,44 @@
             this.gameBoardPanel.Size = new System.Drawing.Size(665, 662);
             this.gameBoardPanel.TabIndex = 0;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Location = new System.Drawing.Point(128, 627);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 8;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReset.Location = new System.Drawing.Point(14, 627);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 7;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            // 
+            // btnDice
+            // 
+            this.btnDice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDice.Location = new System.Drawing.Point(67, 587);
+            this.btnDice.Name = "btnDice";
+            this.btnDice.Size = new System.Drawing.Size(75, 23);
+            this.btnDice.TabIndex = 6;
+            this.btnDice.Text = "Roll Dice";
+            this.btnDice.UseVisualStyleBackColor = true;
+            // 
             // listBox1
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(14, 257);
+            this.listBox1.Location = new System.Drawing.Point(16, 312);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(189, 290);
+            this.listBox1.Size = new System.Drawing.Size(174, 251);
             this.listBox1.TabIndex = 5;
             // 
             // dataGridView
@@ -124,11 +153,11 @@
             this.moneyDataGridViewTextBoxColumn,
             this.hasWonDataGridViewCheckBoxColumn});
             this.dataGridView.DataSource = this.playerBindingSource;
-            this.dataGridView.Location = new System.Drawing.Point(14, 101);
+            this.dataGridView.Location = new System.Drawing.Point(16, 108);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.Size = new System.Drawing.Size(189, 150);
+            this.dataGridView.Size = new System.Drawing.Size(183, 155);
             this.dataGridView.TabIndex = 4;
             // 
             // playerBindingSource
@@ -179,40 +208,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Hare and Tortoise";
             // 
-            // btnDice
-            // 
-            this.btnDice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDice.Location = new System.Drawing.Point(67, 587);
-            this.btnDice.Name = "btnDice";
-            this.btnDice.Size = new System.Drawing.Size(75, 23);
-            this.btnDice.TabIndex = 6;
-            this.btnDice.Text = "Roll Dice";
-            this.btnDice.UseVisualStyleBackColor = true;
-            // 
-            // btnReset
-            // 
-            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReset.Location = new System.Drawing.Point(14, 627);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
-            this.btnReset.TabIndex = 7;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Location = new System.Drawing.Point(128, 627);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 8;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            // 
             // playerTokenImageDataGridViewImageColumn
             // 
             this.playerTokenImageDataGridViewImageColumn.DataPropertyName = "PlayerTokenImage";
             this.playerTokenImageDataGridViewImageColumn.HeaderText = "Colour";
+            this.playerTokenImageDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.playerTokenImageDataGridViewImageColumn.Name = "playerTokenImageDataGridViewImageColumn";
             this.playerTokenImageDataGridViewImageColumn.ReadOnly = true;
             this.playerTokenImageDataGridViewImageColumn.Width = 40;

@@ -21,6 +21,7 @@ namespace HareAndTortoise {
             HareAndTortoise_Game.SetUpGame();
             ResizeGameBoard();
             SetUpGuiGameBoard();
+            dataGridView.DataSource = HareAndTortoise_Game.Players;
         }
 
 
