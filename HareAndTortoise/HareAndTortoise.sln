@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HareAndTortoise", "HareAndTortoise\HareAndTortoise.csproj", "{2D8C9436-A131-452D-A345-668FBE68CB91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player Class Library", "Player Class Library\Player Class Library.csproj", "{245B107D-4EE5-48A6-917E-38561FDB0CD9}"
@@ -10,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square Class Library", "Square Class Library\Square Class Library.csproj", "{41F407E1-CE2B-4C01-BF28-3BC3AFB2EF82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Die Class Library", "Die Class Library\Die Class Library.csproj", "{3F34EEA0-8E30-47FE-9148-D026F44AEFE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D7BEFE46-543A-46BE-B6FE-38362B8EFE83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

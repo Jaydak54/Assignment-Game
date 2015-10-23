@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Square_Class_Library;
 using Board_Class_Library;
+using System.Diagnostics;
 
 namespace HareAndTortoise {
     public partial class HareAndTortoise_Form : Form {
@@ -22,7 +23,8 @@ namespace HareAndTortoise {
             ResizeGameBoard();
             SetUpGuiGameBoard();
             dataGridView.DataSource = HareAndTortoise_Game.Players;
-            UpdatePlayerSquares();
+            UpdatePlayerSquares(true);
+            Trace.Listeners.Add(new ListBoxTraceListener(listBox1));
         }
 
 
@@ -71,7 +73,7 @@ namespace HareAndTortoise {
             gameBoardPanel.Size = new Size(desiredWidth, desiredHeight);
         } //end ResizeGameBoard
 
-        private void UpdatePlayerSquares() {
+        private void UpdatePlayerSquares(bool create) {
             int column;
             int row;
             for (int i = 0; i < HareAndTortoise_Game.Players.Count(); i++)
@@ -82,16 +84,38 @@ namespace HareAndTortoise {
                 // Get the SquareControl of that square
                 MapSquareToTablePanel(squareNo, out column, out row);
                 SquareControl control = (SquareControl)gameBoardPanel.GetControlFromPosition(column, row);
-                // Update containsPlayers element which corresponds to this player
-                control.ContainsPlayers[i] = true;
+                if (create == true)
+                {
+                    // Update containsPlayers element which corresponds to this player
+                    control.ContainsPlayers[i] = true;
+                } else
+                {
+                    control.ContainsPlayers[i] = false;
+                }
+                
             }// end for loop
             // Redisplay the GUI board
             gameBoardPanel.Invalidate(true);
+
         }
 
         private void splitContainer_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnDice_Click(object sender, EventArgs e)
+        {
+            UpdatePlayerSquares(false);
+            HareAndTortoise_Game.PlayOneRound();
+            UpdatePlayerSquares(true);
+        }
+
+        private void OutputPlayersDetails()
+        {
+            HareAndTortoise_Game.OutputAllPlayerDetails();
+            listBox1.Items.Add("");
+            listBox1.SelectedIndex = listBox1.Items.Count - 1;
         }
     }//end class 
 } //end namespace

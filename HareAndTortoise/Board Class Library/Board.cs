@@ -57,7 +57,7 @@ namespace Board_Class_Library {
 
         public static Square StartSquare()
         {
-            return gameBoard[0];
+            return gameBoard[START_SQUARE];
         }
 
         public static Square NextSquare(int number)
@@ -71,6 +71,5 @@ namespace Board_Class_Library {
                 throw new Exception("Number beyond square range.");
             }
         }
-
     }
 }

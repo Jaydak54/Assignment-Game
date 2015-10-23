@@ -15,3 +15,12 @@ C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.csprojResolveAssemblyReference.cache
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.pdb
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Player Class Library.dll
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Player Class Library.pdb
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Square Class Library.dll
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Square Class Library.pdb
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.csprojResolveAssemblyReference.cache
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.dll
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\obj\Debug\Player Class Library.pdb
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Die Class Library.dll
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Player Class Library\bin\Debug\Die Class Library.pdb

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Square_Class_Library;
 using System.Drawing;
+using Die_Class_Library;
 
 namespace Player_Class_Library
 {
@@ -105,6 +106,19 @@ namespace Player_Class_Library
                 }
             }
         }// End PlayerTokenColour property
+
+        public static int RollDice()
+        {
+            Die firstDice = new Die();
+            Die secondDice = new Die();
+
+            int MoveAmount;
+
+            MoveAmount = firstDice.Roll() + secondDice.Roll();
+
+            return MoveAmount;
+
+        }
     }
 
 

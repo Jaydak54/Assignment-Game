@@ -20,13 +20,6 @@ C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Board Class Libra
 C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.csprojResolveAssemblyReference.cache
 C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.dll
 C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.pdb
-C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Board Class Library.dll
-C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Board Class Library.pdb
-C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Square Class Library.dll
-C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Square Class Library.pdb
-C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.csprojResolveAssemblyReference.cache
-C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.dll
-C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.pdb
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Board Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Board Class Library.pdb
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Square Class Library.dll
@@ -34,3 +27,9 @@ C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\b
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.pdb
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.csprojResolveAssemblyReference.cache
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Board Class Library.dll
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Board Class Library.pdb
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Square Class Library.dll
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Square Class Library.pdb
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.dll
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\obj\Debug\Board Class Library.pdb

@@ -30,7 +30,5 @@ namespace Square_Class_Library {
         {
             return number;
         }
-
-
     }
 }
