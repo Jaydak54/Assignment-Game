@@ -62,6 +62,39 @@ namespace HareAndTortoise {
         }
         // MORE METHODS TO BE ADDED HERE LATER
 
+        public static void EndCheck()
+        {
+            int[] money;
+            string[] playerNumber;
+            Array[] info;
+
+            money = new int[6];
+            playerNumber = new string[6];
+            info = new Array[2];
+            for (int i = 0; i < numberOfPlayers; i++)
+                if (Players[i].Location == Board.GetGameBoardSquare(56))
+                {
+                    for (int j = 0; j < numberOfPlayers; j++)
+                    {
+                        money[j] = Players[j].Money;
+                        playerNumber[j] = Players[i].Name;
+
+                        info[0] = money;
+                        info[1] = playerNumber;
+
+                        Array.Sort(info);
+
+                        for (int k = 0; k < numberOfPlayers; k++)
+                        {
+                            //if ( == money[k])
+                            {
+                                Players[k].HasWon = true;
+                            }
+                        }
+                    }
+                }
+        }
+
         public static void OutputAllPlayerDetails()
         {
             for (int i = 0; i < numberOfPlayers; i++)

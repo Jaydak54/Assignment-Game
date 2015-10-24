@@ -122,5 +122,17 @@ namespace HareAndTortoise {
         private void UpdateDataGridView() {
             HareAndTortoise_Game.Players.ResetBindings();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogresult = MessageBox.Show("Are you sure?", "Do you really want to exit?", MessageBoxButtons.YesNo);
+            if (dialogresult == DialogResult.Yes)
+            {
+                Application.Exit();
+            } else if (dialogresult == DialogResult.No)
+            {
+                
+            }
+        }
     }//end class 
 } //end namespace

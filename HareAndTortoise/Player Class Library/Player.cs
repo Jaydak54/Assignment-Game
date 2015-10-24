@@ -125,6 +125,7 @@ namespace Player_Class_Library
             return location;
         }
 
+
         public void RollDice(Die die1, Die die2, out int moveAmount)
         {
             // Rolling dice
@@ -141,7 +142,6 @@ namespace Player_Class_Library
             location.EffectOnPlayer(this);
 
         }
+
     }
-
-
 }
