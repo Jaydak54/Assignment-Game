@@ -8,11 +8,12 @@
 \\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 S2 2015\Class assignment skeleton\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.csprojResolveAssemblyReference.cache
 \\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 S2 2015\Class assignment skeleton\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.dll
 \\qut.edu.au\Documents\StaffHome\StaffGroupR$\roggenka\Desktop\CAB201 S2 2015\Class assignment skeleton\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.dll
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.dll
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.pdb
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.dll
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.pdb
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.dll
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.csprojResolveAssemblyReference.cache

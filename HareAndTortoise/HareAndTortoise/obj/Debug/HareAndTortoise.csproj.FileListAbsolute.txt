@@ -43,21 +43,6 @@ C:\Users\n9491546\Downloads\HareAndTortoise(1)\HareAndTortoise\HareAndTortoise\o
 C:\Users\Jon\Desktop\HareAndTortoise\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe.config
 C:\Users\Jon\Desktop\HareAndTortoise\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.exe
 C:\Users\Jon\Desktop\HareAndTortoise\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe.config
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.exe
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.csprojResolveAssemblyReference.cache
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.HareAndTortoise_Form.resources
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.Properties.Resources.resources
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.csproj.GenerateResource.Cache
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Player Class Library.dll
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Square Class Library.dll
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Player Class Library.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Square Class Library.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Board Class Library.dll
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Board Class Library.pdb
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.csprojResolveAssemblyReference.cache
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.HareAndTortoise_Form.resources
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.Properties.Resources.resources
@@ -75,3 +60,20 @@ C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\De
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Square Class Library.pdb
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.exe
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.csprojResolveAssemblyReference.cache
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.HareAndTortoise_Form.resources
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.Properties.Resources.resources
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.csproj.GenerateResource.Cache
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe.config
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.exe
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\HareAndTortoise.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Board Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Die Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Player Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Square Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Board Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Die Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Player Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\bin\Debug\Square Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.exe
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\HareAndTortoise\obj\Debug\HareAndTortoise.pdb

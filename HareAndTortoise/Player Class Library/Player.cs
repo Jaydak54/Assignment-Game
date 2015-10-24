@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Square_Class_Library;
 using System.Drawing;
 using Die_Class_Library;
+using Board_Class_Library;
 
 namespace Player_Class_Library
 {
@@ -29,6 +30,7 @@ namespace Player_Class_Library
         {
             this.name = name;
             this.location = location;
+            money = 100;
         }
 
         public string Name
@@ -54,6 +56,18 @@ namespace Player_Class_Library
                 money = value;
             }
         }// End Money property
+
+        public void Add(int amount) {
+            money += amount;
+        }
+
+        public void Deduct(int amount) {
+            if ((money - amount) >= 0) {
+                money -= amount;
+            } else {
+                money = 0;
+            }
+        }
 
         public bool HasWon
         {
@@ -107,16 +121,24 @@ namespace Player_Class_Library
             }
         }// End PlayerTokenColour property
 
-        public static int RollDice()
+        public Square GetLocation() {
+            return location;
+        }
+
+        public void RollDice(Die die1, Die die2, out int moveAmount)
         {
-            Die firstDice = new Die();
-            Die secondDice = new Die();
+            // Rolling dice
+            moveAmount = die1.Roll() + die2.Roll();
 
-            int MoveAmount;
+            // getting current square number and incrementing it by dice roll
+            int squareNo = location.GetNumber();
+            int newSquare = squareNo + moveAmount;
 
-            MoveAmount = firstDice.Roll() + secondDice.Roll();
+            // setting location to new square
+            location = Board.GetGameBoardSquare(newSquare);
 
-            return MoveAmount;
+            // applying any effects of the square landed on
+            location.EffectOnPlayer(this);
 
         }
     }

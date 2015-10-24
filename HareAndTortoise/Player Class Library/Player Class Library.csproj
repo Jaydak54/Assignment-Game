@@ -47,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Board Class Library\Board Class Library.csproj">
+      <Project>{dab18cd4-8792-41c5-b03e-b0386211c58a}</Project>
+      <Name>Board Class Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Die Class Library\Die Class Library.csproj">
       <Project>{3f34eea0-8e30-47fe-9148-d026f44aefe4}</Project>
       <Name>Die Class Library</Name>

@@ -109,6 +109,7 @@ namespace HareAndTortoise {
             UpdatePlayerSquares(false);
             HareAndTortoise_Game.PlayOneRound();
             UpdatePlayerSquares(true);
+            UpdateDataGridView();
         }
 
         private void OutputPlayersDetails()
@@ -116,6 +117,10 @@ namespace HareAndTortoise {
             HareAndTortoise_Game.OutputAllPlayerDetails();
             listBox1.Items.Add("");
             listBox1.SelectedIndex = listBox1.Items.Count - 1;
+        }
+
+        private void UpdateDataGridView() {
+            HareAndTortoise_Game.Players.ResetBindings();
         }
     }//end class 
 } //end namespace

@@ -44,24 +44,20 @@ namespace HareAndTortoise {
 
         public static void PlayOneRound()
         {
-            Die firstDice = new Die();
-            Die secondDice = new Die();
+            Die die1 = new Die();
+            Die die2 = new Die();
 
-            int MoveAmount;
+            int moveAmount;
 
             for (int i = 0; i < Players.Count(); i++)
             {
-                MoveAmount = Player.RollDice();
-                Square playerSquare = Players[i].Location;
-                int squareNo = playerSquare.GetNumber();
-                int newSquare = squareNo + MoveAmount;
-
-                Players[i].Location = Board.GetGameBoardSquare(newSquare);
-
-                Square playerLocation = Players[i].Location;
-                Trace.WriteLine(String.Format("Player {0} rolled a {1}.",
-                Players[i].Name, MoveAmount));
+                // Rolling dice and moving player
+                Players[i].RollDice(die1, die2, out moveAmount);
+                // Announcing player results
+                Trace.WriteLine(String.Format("Player {0} rolled a {1}!",
+                Players[i].Name, moveAmount));
             }
+            Trace.WriteLine("");
 
         }
         // MORE METHODS TO BE ADDED HERE LATER

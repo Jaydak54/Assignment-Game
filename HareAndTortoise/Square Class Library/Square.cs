@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Player_Class_Library;
 
 namespace Square_Class_Library {
    
@@ -30,5 +31,7 @@ namespace Square_Class_Library {
         {
             return number;
         }
+
+        public virtual void EffectOnPlayer(Player who) { }
     }
 }
