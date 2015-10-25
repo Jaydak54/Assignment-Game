@@ -31,7 +31,6 @@
             this.btnDice = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moneyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hasWonDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
@@ -121,6 +121,7 @@
             this.btnReset.TabIndex = 7;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnDice
             // 
@@ -157,14 +158,9 @@
             this.dataGridView.DataSource = this.playerBindingSource;
             this.dataGridView.Location = new System.Drawing.Point(16, 108);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.Size = new System.Drawing.Size(183, 155);
             this.dataGridView.TabIndex = 4;
-            // 
-            // playerBindingSource
-            // 
-            this.playerBindingSource.DataSource = typeof(Player_Class_Library.Player);
             // 
             // comboBox1
             // 
@@ -224,7 +220,6 @@
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             this.nameDataGridViewTextBoxColumn.Width = 60;
             // 
             // moneyDataGridViewTextBoxColumn
@@ -242,6 +237,10 @@
             this.hasWonDataGridViewCheckBoxColumn.Name = "hasWonDataGridViewCheckBoxColumn";
             this.hasWonDataGridViewCheckBoxColumn.ReadOnly = true;
             this.hasWonDataGridViewCheckBoxColumn.Width = 50;
+            // 
+            // playerBindingSource
+            // 
+            this.playerBindingSource.DataSource = typeof(Player_Class_Library.Player);
             // 
             // HareAndTortoise_Form
             // 

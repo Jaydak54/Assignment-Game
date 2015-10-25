@@ -13,7 +13,7 @@ using System.Diagnostics;
 
 namespace HareAndTortoise {
     public partial class HareAndTortoise_Form : Form {
-
+        
         const int NUM_OF_ROWS = 8;
         const int NUM_OF_COLUMNS = 7;
 
@@ -133,6 +133,12 @@ namespace HareAndTortoise {
             {
                 
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            // need a way to make all player info reset
+            btnDice.Enabled = true;
         }
     }//end class 
 } //end namespace

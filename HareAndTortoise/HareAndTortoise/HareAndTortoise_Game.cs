@@ -29,7 +29,6 @@ namespace HareAndTortoise {
 
             Board.SetUpBoard();
             SetUpPlayers();
-            //more code to be added later
         }// end SetUpGame
 
         private static void SetUpPlayers()
@@ -48,51 +47,118 @@ namespace HareAndTortoise {
             Die die2 = new Die();
 
             int moveAmount;
+            bool gameOver = false;
 
             for (int i = 0; i < Players.Count(); i++)
             {
                 // Rolling dice and moving player
-                Players[i].RollDice(die1, die2, out moveAmount);
+                Players[i].RollDice(die1, die2, out moveAmount, out gameOver);
                 // Announcing player results
                 Trace.WriteLine(String.Format("Player {0} rolled a {1}!",
                 Players[i].Name, moveAmount));
             }
             Trace.WriteLine("");
+            if (gameOver == true)
+            {
+                List<int> winners = EndChecks();
+                EndGame(winners);
+            }
 
         }
-        // MORE METHODS TO BE ADDED HERE LATER
 
-        public static void EndCheck()
+        public static void EndGame(List<int> winners)
         {
-            int[] money;
-            string[] playerNumber;
-            Array[] info;
+            // announce winners from given array
+            if (winners.Count == 1) {
+                Trace.WriteLine("\nAnd the winner is...\n");
+            } else {
+                Trace.WriteLine("\nAnd the winners are...\n");
+            }
 
-            money = new int[6];
-            playerNumber = new string[6];
-            info = new Array[2];
-            for (int i = 0; i < numberOfPlayers; i++)
-                if (Players[i].Location == Board.GetGameBoardSquare(56))
+            foreach (int winner in winners) {
+                string playerName = Players[winner].Name;
+                int playerMoney = Players[winner].Money;
+                Trace.WriteLine(String.Format("{0} with ${1}", playerName, playerMoney));
+            }
+            // disable roll dice button
+            
+        }
+
+        public static List<int> EndChecks()
+        {
+            // Array containing player money and player number
+            int[][] playerInfo = OrderByMoney(GetPlayerInfo());
+            List<int> winnerList = new List<int>();
+
+            for (int i = 0; playerInfo[0][0] == playerInfo[i][0] && i < numberOfPlayers; i++)
+            {
+                winnerList.Add(i);
+                Players[i].HasWon = true;
+            }
+            return winnerList;
+        }
+
+        /// <summary>
+        /// Orders a given jagged array in a descending
+        /// fashion based on values held within each
+        /// array's 0'th position
+        /// </summary>
+        /// <param name="info">An array containing player info to be ordered</param>
+        /// <returns>a jagged array, ordered in an descending fashion</returns>
+        public static int[][] OrderByMoney(int[][] info)
+        {
+            int[][] orderedInfo = InitialiseInfoArray();
+            int newMoney = 0; // container for sorting loop
+            int newPlayer = 0; // as above
+            bool sorted = false;
+            bool sortedWithErrors; // will be true if sorting encountered a case where a number had to be moved
+
+            while (!sorted)
+            {
+                sortedWithErrors = false;
+                for (int i = 0; i < numberOfPlayers-1; i++)
                 {
-                    for (int j = 0; j < numberOfPlayers; j++)
+                    if (info[i][0] < info[i + 1][0])
                     {
-                        money[j] = Players[j].Money;
-                        playerNumber[j] = Players[i].Name;
+                        // Swap money and player numbers
+                        newMoney = info[i + 1][0];
+                        newPlayer = info[i + 1][1];
 
-                        info[0] = money;
-                        info[1] = playerNumber;
+                        info[i + 1][0] = info[i][0];
+                        info[i + 1][1] = info[i][1];
 
-                        Array.Sort(info);
+                        info[i][0] = newMoney;
+                        info[i][1] = newPlayer;
 
-                        for (int k = 0; k < numberOfPlayers; k++)
-                        {
-                            //if ( == money[k])
-                            {
-                                Players[k].HasWon = true;
-                            }
-                        }
+                        // mark this pass as having had errors (prompt another pass)
+                        sortedWithErrors = sortedWithErrors || true;
                     }
                 }
+                sorted = !sortedWithErrors;
+            }
+            return info;
+        }
+
+        public static int[][] GetPlayerInfo()
+        {
+            int[][] info = InitialiseInfoArray();
+            for (int i = 0; i < numberOfPlayers; i++)
+            {
+                info[i][0] = Players[i].Money;
+                info[i][1] = i;
+            }
+            return info;
+        }
+
+        public static int[][] InitialiseInfoArray()
+        {
+            int[][] info = new int[numberOfPlayers][];
+            for (int i = 0; i < info.Length; i++)
+            {
+                info[i] = new int[2];
+            } // end array initialisation
+
+            return info;
         }
 
         public static void OutputAllPlayerDetails()
@@ -102,6 +168,7 @@ namespace HareAndTortoise {
                 OutputIndividualDetails(Players[i]);
             }
         } // end OutputAllPlayerDetails
+
           /// <summary>
           /// Outputs a player's current location and amount of money
           /// pre: player's object to display

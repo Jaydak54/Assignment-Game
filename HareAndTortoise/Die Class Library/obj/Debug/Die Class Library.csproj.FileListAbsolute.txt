@@ -16,4 +16,3 @@ C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\bin
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\bin\Debug\Die Class Library.pdb
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.pdb
-C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Die Class Library\obj\Debug\Die Class Library.csprojResolveAssemblyReference.cache

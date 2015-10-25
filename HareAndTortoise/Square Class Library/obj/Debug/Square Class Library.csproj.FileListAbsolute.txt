@@ -15,5 +15,12 @@ C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\o
 C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.pdb
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Square Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Square Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.csprojResolveAssemblyReference.cache
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\obj\Debug\Square Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Player Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Die Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Board Class Library.dll
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Player Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Die Class Library.pdb
+C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Square Class Library\bin\Debug\Board Class Library.pdb

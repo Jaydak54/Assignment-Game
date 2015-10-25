@@ -121,12 +121,8 @@ namespace Player_Class_Library
             }
         }// End PlayerTokenColour property
 
-        public Square GetLocation() {
-            return location;
-        }
 
-
-        public void RollDice(Die die1, Die die2, out int moveAmount)
+        public void RollDice(Die die1, Die die2, out int moveAmount, out bool gameOver)
         {
             // Rolling dice
             moveAmount = die1.Roll() + die2.Roll();
@@ -134,6 +130,14 @@ namespace Player_Class_Library
             // getting current square number and incrementing it by dice roll
             int squareNo = location.GetNumber();
             int newSquare = squareNo + moveAmount;
+
+            // check if player has moved onto or past finish
+            if (newSquare >= Board.FINISH_SQUARE) {
+                newSquare = Board.FINISH_SQUARE;
+                gameOver = true;
+            } else {
+                gameOver = false;
+            }
 
             // setting location to new square
             location = Board.GetGameBoardSquare(newSquare);
