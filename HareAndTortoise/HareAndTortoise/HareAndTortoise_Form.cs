@@ -27,7 +27,6 @@ namespace HareAndTortoise {
             Trace.Listeners.Add(new ListBoxTraceListener(listBox1));
         }
 
-
         private void SetUpGuiGameBoard() {
             int row;
             int column;
@@ -97,6 +96,7 @@ namespace HareAndTortoise {
             // Redisplay the GUI board
             gameBoardPanel.Invalidate(true);
 
+
         }
 
         private void splitContainer_Panel2_Paint(object sender, PaintEventArgs e)
@@ -110,6 +110,8 @@ namespace HareAndTortoise {
             HareAndTortoise_Game.PlayOneRound();
             UpdatePlayerSquares(true);
             UpdateDataGridView();
+            comboBox1.Enabled = false;
+            DisableButton();
         }
 
         private void OutputPlayersDetails()
@@ -133,6 +135,20 @@ namespace HareAndTortoise {
             {
                 
             }
+        }
+
+        private void DisableButton()
+        {
+            for (int i = 0; i < HareAndTortoise_Game.Players.Count(); i++)
+            {
+                Square playerSquare = HareAndTortoise_Game.Players[i].Location;
+                int squareNo = playerSquare.GetNumber();
+                if (squareNo >= Board.FINISH_SQUARE)
+                {
+                    btnDice.Enabled = false;
+                }
+            }
+                
         }
 
         private void btnReset_Click(object sender, EventArgs e)

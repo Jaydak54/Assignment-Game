@@ -31,6 +31,7 @@
             this.btnDice = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moneyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hasWonDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
@@ -162,6 +162,10 @@
             this.dataGridView.Size = new System.Drawing.Size(183, 155);
             this.dataGridView.TabIndex = 4;
             // 
+            // playerBindingSource
+            // 
+            this.playerBindingSource.DataSource = typeof(Player_Class_Library.Player);
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -175,6 +179,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(32, 21);
             this.comboBox1.TabIndex = 3;
+            this.comboBox1.Text = "6";
             // 
             // label3
             // 
@@ -213,6 +218,7 @@
             this.playerTokenImageDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.playerTokenImageDataGridViewImageColumn.Name = "playerTokenImageDataGridViewImageColumn";
             this.playerTokenImageDataGridViewImageColumn.ReadOnly = true;
+            this.playerTokenImageDataGridViewImageColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.playerTokenImageDataGridViewImageColumn.Width = 40;
             // 
             // nameDataGridViewTextBoxColumn
@@ -220,6 +226,7 @@
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.nameDataGridViewTextBoxColumn.Width = 60;
             // 
             // moneyDataGridViewTextBoxColumn
@@ -228,6 +235,7 @@
             this.moneyDataGridViewTextBoxColumn.HeaderText = "$";
             this.moneyDataGridViewTextBoxColumn.Name = "moneyDataGridViewTextBoxColumn";
             this.moneyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.moneyDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.moneyDataGridViewTextBoxColumn.Width = 30;
             // 
             // hasWonDataGridViewCheckBoxColumn
@@ -236,11 +244,8 @@
             this.hasWonDataGridViewCheckBoxColumn.HeaderText = "Winner";
             this.hasWonDataGridViewCheckBoxColumn.Name = "hasWonDataGridViewCheckBoxColumn";
             this.hasWonDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.hasWonDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.hasWonDataGridViewCheckBoxColumn.Width = 50;
-            // 
-            // playerBindingSource
-            // 
-            this.playerBindingSource.DataSource = typeof(Player_Class_Library.Player);
             // 
             // HareAndTortoise_Form
             // 

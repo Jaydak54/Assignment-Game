@@ -41,6 +41,11 @@ namespace HareAndTortoise {
             }
         } 
 
+        public static void RetrieveInfo()
+        {
+
+        }
+
         public static void PlayOneRound()
         {
             Die die1 = new Die();
@@ -51,11 +56,15 @@ namespace HareAndTortoise {
 
             for (int i = 0; i < Players.Count(); i++)
             {
-                // Rolling dice and moving player
-                Players[i].RollDice(die1, die2, out moveAmount, out gameOver);
-                // Announcing player results
-                Trace.WriteLine(String.Format("Player {0} rolled a {1}!",
-                Players[i].Name, moveAmount));
+                if (gameOver == false)
+                {
+                    // Rolling dice and moving player
+                    Players[i].RollDice(die1, die2, out moveAmount, out gameOver);
+
+                    // Announcing player results
+                    Trace.WriteLine(String.Format("Player {0} rolled a {1}!",
+                    Players[i].Name, moveAmount));
+                }
             }
             Trace.WriteLine("");
             if (gameOver == true)
@@ -65,6 +74,38 @@ namespace HareAndTortoise {
             }
 
         }
+
+        /*public static void DisableParse(bool disableParse, out bool runIt)
+        {
+            
+            runIt = false;
+            if (disableParse == true)
+            {
+                runIt = true; 
+            }
+            else
+            {
+                runIt = false;
+            }
+            
+        }*/
+
+        /*public static bool ButtonDisable()
+        {
+            bool disable;
+            bool disableParse;
+            DisableParse(true, out disableParse);
+            Trace.WriteLine(String.Format(disableParse.ToString()));
+            if (disableParse == true)
+            {
+                disable = true;
+                return disable;
+            }else
+            {
+                disable = false;
+                return disable;
+            }
+        }*/
 
         public static void EndGame(List<int> winners)
         {
@@ -81,7 +122,7 @@ namespace HareAndTortoise {
                 Trace.WriteLine(String.Format("{0} with ${1}", playerName, playerMoney));
             }
             // disable roll dice button
-            
+            //currently disabled when player location >= FINISH_SQUARE in HareAndTortoise_Form
         }
 
         public static List<int> EndChecks()
@@ -92,8 +133,8 @@ namespace HareAndTortoise {
 
             for (int i = 0; playerInfo[0][0] == playerInfo[i][0] && i < numberOfPlayers; i++)
             {
-                winnerList.Add(i);
-                Players[i].HasWon = true;
+                winnerList.Add(playerInfo[i][1]);
+                Players[playerInfo[i][1]].HasWon = true;
             }
             return winnerList;
         }
