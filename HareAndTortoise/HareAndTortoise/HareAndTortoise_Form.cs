@@ -13,7 +13,7 @@ using System.Diagnostics;
 
 namespace HareAndTortoise {
     public partial class HareAndTortoise_Form : Form {
-        
+
         const int NUM_OF_ROWS = 8;
         const int NUM_OF_COLUMNS = 7;
 
@@ -37,7 +37,7 @@ namespace HareAndTortoise {
                     control.BackColor = Color.BurlyWood;
                 }
 
-                
+
                 MapSquareToTablePanel(i, out column, out row);
                 // Now adding the square controllers to each box in gameBoardPanel
                 gameBoardPanel.Controls.Add(control, column, row);
@@ -91,7 +91,7 @@ namespace HareAndTortoise {
                 {
                     control.ContainsPlayers[i] = false;
                 }
-                
+
             }// end for loop
             // Redisplay the GUI board
             gameBoardPanel.Invalidate(true);
@@ -106,11 +106,6 @@ namespace HareAndTortoise {
 
         private void btnDice_Click(object sender, EventArgs e)
         {
-            UpdatePlayerSquares(false);
-            HareAndTortoise_Game.PlayOneRound();
-            UpdatePlayerSquares(true);
-            UpdateDataGridView();
-            comboBox1.Enabled = false;
             DisableButton();
         }
 
@@ -125,20 +120,31 @@ namespace HareAndTortoise {
             HareAndTortoise_Game.Players.ResetBindings();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void ExitGame()
         {
             DialogResult dialogresult = MessageBox.Show("Are you sure?", "Do you really want to exit?", MessageBoxButtons.YesNo);
             if (dialogresult == DialogResult.Yes)
             {
                 Application.Exit();
-            } else if (dialogresult == DialogResult.No)
-            {
-                
             }
+            else if (dialogresult == DialogResult.No)
+            {
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            ExitGame();
         }
 
         private void DisableButton()
         {
+            UpdatePlayerSquares(false);
+            HareAndTortoise_Game.PlayOneRound();
+            UpdatePlayerSquares(true);
+            UpdateDataGridView();
+            comboBox1.Enabled = false;
+
             for (int i = 0; i < HareAndTortoise_Game.Players.Count(); i++)
             {
                 Square playerSquare = HareAndTortoise_Game.Players[i].Location;
@@ -148,10 +154,10 @@ namespace HareAndTortoise {
                     btnDice.Enabled = false;
                 }
             }
-                
+
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
+        private void ResetGame()
         {
             // Clears players from all squares
             UpdatePlayerSquares(false);
@@ -169,7 +175,12 @@ namespace HareAndTortoise {
             UpdateDataGridView();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetGame();
+        }
+
+        private void comboBoxChanged()
         {
             //Clears all players from board
             UpdatePlayerSquares(false);
@@ -180,9 +191,14 @@ namespace HareAndTortoise {
             {
                 HareAndTortoise_Game.Players[i].Location = Board.StartSquare();
             }
-                UpdatePlayerSquares(true);
+            UpdatePlayerSquares(true);
             infoBox.Items.Clear();
             UpdateDataGridView();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxChanged();
         }
 
     }//end class 
