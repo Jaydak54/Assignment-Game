@@ -168,5 +168,17 @@ namespace HareAndTortoise {
             infoBox.Items.Clear();
             UpdateDataGridView();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Clears all players from board
+            UpdatePlayerSquares(false);
+            //Sets NumberOfPlayers to Combobox selection
+            HareAndTortoise_Game.NumberOfPlayers = comboBox1.SelectedIndex;
+            //Places players on board
+            UpdatePlayerSquares(true);
+            infoBox.Items.Clear();
+            UpdateDataGridView();
+        }
     }//end class 
 } //end namespace

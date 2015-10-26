@@ -21,6 +21,10 @@ namespace HareAndTortoise {
             {
                 return numberOfPlayers;
             }
+            set
+            {
+                numberOfPlayers = value;
+            }
         }
         private static string[] playerNames = {"One", "Two", "Three", "Four", "Five", "Six"};
         private static Brush[] playerColours = {Brushes.Black, Brushes.Red, Brushes.Gold, Brushes.GreenYellow, Brushes.Fuchsia, Brushes.BlueViolet};
