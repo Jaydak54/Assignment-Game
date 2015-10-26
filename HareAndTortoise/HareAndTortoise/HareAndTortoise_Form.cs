@@ -152,6 +152,7 @@ namespace HareAndTortoise {
                 if (squareNo >= Board.FINISH_SQUARE)
                 {
                     btnDice.Enabled = false;
+                    comboBox1.Enabled = true;
                 }
             }
 
@@ -170,9 +171,11 @@ namespace HareAndTortoise {
             }
             btnDice.Enabled = true;
             // Places players back on board and refreshes player info panels
+            comboBox1.Enabled = true;
             UpdatePlayerSquares(true);
             infoBox.Items.Clear();
             UpdateDataGridView();
+            
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -194,6 +197,7 @@ namespace HareAndTortoise {
             UpdatePlayerSquares(true);
             infoBox.Items.Clear();
             UpdateDataGridView();
+            btnDice.Enabled = true;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -52,11 +52,6 @@ namespace HareAndTortoise {
             }
         } 
 
-        public static void RetrieveInfo()
-        {
-
-        }
-
         public static void PlayOneRound()
         {
             Die die1 = new Die();
@@ -84,38 +79,6 @@ namespace HareAndTortoise {
             }
 
         }
-
-        /*public static void DisableParse(bool disableParse, out bool runIt)
-        {
-            
-            runIt = false;
-            if (disableParse == true)
-            {
-                runIt = true; 
-            }
-            else
-            {
-                runIt = false;
-            }
-            
-        }*/
-
-        /*public static bool ButtonDisable()
-        {
-            bool disable;
-            bool disableParse;
-            DisableParse(true, out disableParse);
-            Trace.WriteLine(String.Format(disableParse.ToString()));
-            if (disableParse == true)
-            {
-                disable = true;
-                return disable;
-            }else
-            {
-                disable = false;
-                return disable;
-            }
-        }*/
 
         public static void EndGame(List<int> winners)
         {

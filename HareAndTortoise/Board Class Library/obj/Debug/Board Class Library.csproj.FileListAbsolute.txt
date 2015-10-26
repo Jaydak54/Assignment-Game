@@ -39,3 +39,6 @@ C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\b
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Die Class Library.dll
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Player Class Library.pdb
 C:\Users\Jack\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Die Class Library.pdb
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Die Class Library.dll
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Player Class Library.pdb
+C:\Users\Jon\Documents\GitHub\assignment4\HareAndTortoise\Board Class Library\bin\Debug\Die Class Library.pdb

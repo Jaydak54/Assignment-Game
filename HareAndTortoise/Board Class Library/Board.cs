@@ -49,9 +49,12 @@ namespace Board_Class_Library {
             {
                 return gameBoard[number];
             }
-            else
+            else if (number > FINISH_SQUARE)
             {
                 throw new Exception("Number beyond square range.");
+            } else 
+            {
+                throw new Exception("Input is not an Integer.");
             }
         }
 
@@ -66,9 +69,12 @@ namespace Board_Class_Library {
             {
                 return gameBoard[number + 1];
             }
-            else
+            else if (number >= FINISH_SQUARE)
             {
                 throw new Exception("Number beyond square range.");
+            } else
+            {
+                throw new Exception("Input is not an integer.");
             }
         }
     }
