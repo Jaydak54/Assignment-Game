@@ -150,7 +150,7 @@ namespace Player_Class_Library
 
         }
 
-        public void MoveSquares(int moveNumber, ref bool gameOver, ref int movedExtra, Player who)
+        public void MoveSquares(int moveNumber, ref bool gameOver, ref int movedExtra)
         {
             int squareNo = location.GetNumber();
             int newSquare = squareNo + moveNumber;
@@ -173,7 +173,7 @@ namespace Player_Class_Library
             location = Board.GetGameBoardSquare(newSquare);
 
             //Checking for any effects on new square on board
-            location.EffectOnPlayer(who, ref gameOver, ref movedExtra);
+            location.EffectOnPlayer(this, ref gameOver, ref movedExtra);
         }
 
         public void CallRoll(ref bool gameOver, ref int movedExtra, Player who)
