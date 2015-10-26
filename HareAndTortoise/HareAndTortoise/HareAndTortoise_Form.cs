@@ -24,7 +24,7 @@ namespace HareAndTortoise {
             SetUpGuiGameBoard();
             dataGridView.DataSource = HareAndTortoise_Game.Players;
             UpdatePlayerSquares(true);
-            Trace.Listeners.Add(new ListBoxTraceListener(listBox1));
+            Trace.Listeners.Add(new ListBoxTraceListener(infoBox));
         }
 
         private void SetUpGuiGameBoard() {
@@ -117,8 +117,8 @@ namespace HareAndTortoise {
         private void OutputPlayersDetails()
         {
             HareAndTortoise_Game.OutputAllPlayerDetails();
-            listBox1.Items.Add("");
-            listBox1.SelectedIndex = listBox1.Items.Count - 1;
+            infoBox.Items.Add("");
+            infoBox.SelectedIndex = infoBox.Items.Count - 1;
         }
 
         private void UpdateDataGridView() {
@@ -153,8 +153,20 @@ namespace HareAndTortoise {
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            // need a way to make all player info reset
+            // Clears players from all squares
+            UpdatePlayerSquares(false);
+            // Resets all player data
+            for (int i = 0; i < HareAndTortoise_Game.NumberOfPlayers; i++)
+            {
+                HareAndTortoise_Game.Players[i].Location = Board.StartSquare();
+                HareAndTortoise_Game.Players[i].Money = 100;
+                HareAndTortoise_Game.Players[i].HasWon = false;
+            }
             btnDice.Enabled = true;
+            // Places players back on board and refreshes player info panels
+            UpdatePlayerSquares(true);
+            infoBox.Items.Clear();
+            UpdateDataGridView();
         }
     }//end class 
 } //end namespace

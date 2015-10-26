@@ -15,6 +15,13 @@ namespace HareAndTortoise {
     public static class HareAndTortoise_Game {
 
         private static int numberOfPlayers = 6;
+        public static int NumberOfPlayers
+        {
+            get
+            {
+                return numberOfPlayers;
+            }
+        }
         private static string[] playerNames = {"One", "Two", "Three", "Four", "Five", "Six"};
         private static Brush[] playerColours = {Brushes.Black, Brushes.Red, Brushes.Gold, Brushes.GreenYellow, Brushes.Fuchsia, Brushes.BlueViolet};
 
