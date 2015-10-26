@@ -64,18 +64,17 @@ namespace HareAndTortoise {
 
             int moveAmount;
             bool gameOver = false;
+            bool playerReachedFinish = false;
 
-            for (int i = 0; i < Players.Count(); i++)
-            {
-                if (gameOver == false)
-                {
+            for (int i = 0; i < HareAndTortoise_Game.NumberOfPlayers; i++)
+            {                
                     // Rolling dice and moving player
-                    Players[i].RollDice(die1, die2, out moveAmount, out gameOver);
+                    Players[i].RollDice(die1, die2, out moveAmount, out playerReachedFinish);
 
                     // Announcing player results
                     Trace.WriteLine(String.Format("Player {0} rolled a {1}!",
                     Players[i].Name, moveAmount));
-                }
+                    gameOver = gameOver || playerReachedFinish;
             }
             Trace.WriteLine("");
             if (gameOver == true)

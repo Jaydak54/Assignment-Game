@@ -75,7 +75,7 @@ namespace HareAndTortoise {
         private void UpdatePlayerSquares(bool create) {
             int column;
             int row;
-            for (int i = 0; i < HareAndTortoise_Game.Players.Count(); i++)
+            for (int i = 0; i < HareAndTortoise_Game.NumberOfPlayers; i++)
             {
                 // Determine the square that the player is on
                 Square playerSquare = HareAndTortoise_Game.Players[i].Location;
@@ -83,7 +83,7 @@ namespace HareAndTortoise {
                 // Get the SquareControl of that square
                 MapSquareToTablePanel(squareNo, out column, out row);
                 SquareControl control = (SquareControl)gameBoardPanel.GetControlFromPosition(column, row);
-                if (create == true)
+                if (create == true && i < HareAndTortoise_Game.NumberOfPlayers)
                 {
                     // Update containsPlayers element which corresponds to this player
                     control.ContainsPlayers[i] = true;
@@ -174,11 +174,17 @@ namespace HareAndTortoise {
             //Clears all players from board
             UpdatePlayerSquares(false);
             //Sets NumberOfPlayers to Combobox selection
-            HareAndTortoise_Game.NumberOfPlayers = comboBox1.SelectedIndex;
+            HareAndTortoise_Game.NumberOfPlayers = comboBox1.SelectedIndex + 2;
             //Places players on board
-            UpdatePlayerSquares(true);
+            for (int i = 0; i < HareAndTortoise_Game.NumberOfPlayers; i++)
+            {
+                HareAndTortoise_Game.Players[i].Location = Board.StartSquare();
+            }
+                UpdatePlayerSquares(true);
             infoBox.Items.Clear();
             UpdateDataGridView();
+            Console.WriteLine(HareAndTortoise_Game.NumberOfPlayers);
         }
+
     }//end class 
 } //end namespace
