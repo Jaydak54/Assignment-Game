@@ -14,8 +14,10 @@ namespace Square_Class_Library
 
         }
 
-        public override void EffectOnPlayer(Player who) {
+        public override void EffectOnPlayer(Player who, ref bool gameOver, ref int movedExtra)
+        {
             who.Deduct(25);
+            who.MoveSquares(-3, ref gameOver, ref movedExtra);
         }
     }
 }

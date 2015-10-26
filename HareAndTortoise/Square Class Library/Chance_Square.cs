@@ -14,13 +14,20 @@ namespace Square_Class_Library
 
         }
 
-        public override void EffectOnPlayer(Player who) {
+        public override void EffectOnPlayer(Player who, ref bool gameOver, ref int movedExtra)
+        {
             Random randint = new Random();
-            if (randint.Next(2) == 0) {
+            if (randint.Next(2) == 0)
+            {
                 who.Add(50);
-            } else {
+                who.MoveSquares(5, ref gameOver, ref movedExtra, who);
+            }
+            else
+            {
                 who.Deduct(50);
+                who.MoveSquares(-5, ref gameOver, ref movedExtra, who);
             }
         }
+
     }
 }

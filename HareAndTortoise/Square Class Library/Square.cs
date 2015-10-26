@@ -32,6 +32,12 @@ namespace Square_Class_Library {
             return number;
         }
 
-        public virtual void EffectOnPlayer(Player who) { }
+        public virtual void EffectOnPlayer(Player who, ref bool gameOver, ref int movedExtra)
+        {
+            bool gameOver1 = gameOver;
+            gameOver = gameOver1;
+            int movedExtra1 = movedExtra;
+            movedExtra = movedExtra1;
+        }
     }
 }
