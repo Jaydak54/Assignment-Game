@@ -62,26 +62,19 @@ namespace HareAndTortoise {
             Die die1 = new Die();
             Die die2 = new Die();
 
-            int moveAmount = 0;
-            int movedExtra = 0;
+            int moveAmount;
             bool gameOver = false;
             bool playerReachedFinish = false;
 
             for (int i = 0; i < HareAndTortoise_Game.NumberOfPlayers; i++)
-            {
-                // Rolling dice and moving player
-                Players[i].RollDice(die1, die2, ref moveAmount, ref playerReachedFinish, ref movedExtra, Players[i]);
+            {                
+                    // Rolling dice and moving player
+                    Players[i].RollDice(die1, die2, out moveAmount, out playerReachedFinish);
 
-                // Announcing player results
-                Trace.WriteLine(String.Format("Player {0} rolled a {1}!",
-                Players[i].Name, moveAmount));
-                if (movedExtra > 0)
-                {
-                    Trace.WriteLine(String.Format("Player {0} moved an extra {1} spaces!",
-                    Players[i].Name, movedExtra));
-                }
-
-                gameOver = gameOver || playerReachedFinish;
+                    // Announcing player results
+                    Trace.WriteLine(String.Format("Player {0} rolled a {1}!",
+                    Players[i].Name, moveAmount));
+                    gameOver = gameOver || playerReachedFinish;
             }
             Trace.WriteLine("");
             if (gameOver == true)

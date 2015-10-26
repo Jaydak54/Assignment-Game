@@ -14,11 +14,8 @@ namespace Square_Class_Library
 
         }
 
-        public override void EffectOnPlayer(Player who, ref bool gameOver, ref int movedExtra)
-        {
+        public override void EffectOnPlayer(Player who) {
             who.Add(15);
-            who.CallRoll(ref gameOver, ref movedExtra, who);
-
         }
     }
 }

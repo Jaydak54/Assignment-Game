@@ -13,6 +13,7 @@ namespace Player_Class_Library
 
     public class Player
     {
+
         private string name;
         private int money;
         private bool hasWon;
@@ -121,23 +122,20 @@ namespace Player_Class_Library
         }// End PlayerTokenColour property
 
 
-        public void RollDice(Die die1, Die die2, ref int moveAmount, ref bool gameOver, ref int movedExtra, Player thisObject)
+        public void RollDice(Die die1, Die die2, out int moveAmount, out bool gameOver)
         {
             // Rolling dice
-            moveAmount = moveAmount + die1.Roll() + die2.Roll();
+            moveAmount = die1.Roll() + die2.Roll();
 
             // getting current square number and incrementing it by dice roll
             int squareNo = location.GetNumber();
             int newSquare = squareNo + moveAmount;
 
             // check if player has moved onto or past finish
-            if (newSquare >= Board.FINISH_SQUARE)
-            {
+            if (newSquare >= Board.FINISH_SQUARE) {
                 newSquare = Board.FINISH_SQUARE;
                 gameOver = true;
-            }
-            else
-            {
+            } else {
                 gameOver = false;
             }
 
@@ -145,51 +143,9 @@ namespace Player_Class_Library
             location = Board.GetGameBoardSquare(newSquare);
 
             // applying any effects of the square landed on
-            location.EffectOnPlayer(this, ref gameOver, ref movedExtra);
-            // add in Square.cs to return 0 in EffectOnPlayer and leave gameOver as it is
+            location.EffectOnPlayer(this);
 
         }
 
-        public void MoveSquares(int moveNumber, ref bool gameOver, ref int movedExtra)
-        {
-            int squareNo = location.GetNumber();
-            int newSquare = squareNo + moveNumber;
-
-            //If square is past finish, game ends
-            if (newSquare >= Board.FINISH_SQUARE)
-            {
-                newSquare = Board.FINISH_SQUARE;
-                gameOver = true;
-            }
-            else
-            {
-                gameOver = false;
-            }
-
-            //Increment MovedExtra by number of extra moves to make
-            movedExtra = movedExtra + moveNumber;
-
-            //Set location to newSquare
-            location = Board.GetGameBoardSquare(newSquare);
-
-            //Checking for any effects on new square on board
-            location.EffectOnPlayer(this, ref gameOver, ref movedExtra);
-        }
-
-        public void CallRoll(ref bool gameOver, ref int movedExtra, Player who)
-        {
-            int movedFurtherExtra = 0;
-            Die die1 = new Die();
-            Die die2 = new Die();
-
-            bool gameOver1 = gameOver;
-
-            gameOver = gameOver1;
-
-            RollDice(die1, die2, ref movedExtra, ref gameOver, ref movedFurtherExtra, who);
-
-            movedExtra += movedFurtherExtra;
-
-        }
     }
 }
