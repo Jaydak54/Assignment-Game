@@ -183,7 +183,6 @@ namespace HareAndTortoise {
                 UpdatePlayerSquares(true);
             infoBox.Items.Clear();
             UpdateDataGridView();
-            Console.WriteLine(HareAndTortoise_Game.NumberOfPlayers);
         }
 
     }//end class 
