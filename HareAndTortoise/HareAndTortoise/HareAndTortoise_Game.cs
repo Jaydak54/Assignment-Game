@@ -42,8 +42,12 @@ namespace HareAndTortoise {
             SetUpPlayers();
         }// end SetUpGame
 
+        /// <summary>
+        /// Positions all players at the start square, sets corresponding colour and name and adds a new Player object.
+        /// </summary>
         private static void SetUpPlayers()
         {
+            //Loop through all players and ititialise player info, position and colour
             for (int i = 0; i < numberOfPlayers; i++)
             {
                 Player newPlayer = new Player(playerNames[i], Board.StartSquare());
@@ -52,8 +56,15 @@ namespace HareAndTortoise {
             }
         } 
 
+        /// <summary>
+        /// Plays one round; Rolls die and moves each player to their designated square. 
+        /// Outputs player's dice roll to Listbox.
+        /// Checks gameOver boolean and, if true, runs end game methods,
+        /// runs EndChecks and EndGame.
+        /// </summary>
         public static void PlayOneRound()
         {
+            //Initialise Dice constructors
             Die die1 = new Die();
             Die die2 = new Die();
 
@@ -74,12 +85,17 @@ namespace HareAndTortoise {
             Trace.WriteLine("");
             if (gameOver == true)
             {
+                //Run game over methods
                 List<int> winners = EndChecks();
                 EndGame(winners);
             }
 
-        }
+        }// end PlayOneRound
 
+        /// <summary>
+        /// Outputs all winners to the Listbox with corresponding money amounts. Retrieved from winners list.
+        /// </summary>
+        /// <param name="winners">a list containing information of all winners sent from EndChecks.</param>
         public static void EndGame(List<int> winners)
         {
             // announce winners from given array
@@ -94,23 +110,28 @@ namespace HareAndTortoise {
                 int playerMoney = Players[winner].Money;
                 Trace.WriteLine(String.Format("{0} with ${1}", playerName, playerMoney));
             }
-            // disable roll dice button
-            //currently disabled when player location >= FINISH_SQUARE in HareAndTortoise_Form
-        }
+        }//End EndGame
 
+        /// <summary>
+        /// Writes all player money and player numbers to a jagged array.
+        /// Checks if all entries are in descending order and then writes to the winners list.
+        /// Sets HasWon on all winning players to true.
+        /// </summary>
+        /// <returns>a list containing all winners and corresponding information</returns>
         public static List<int> EndChecks()
         {
             // Array containing player money and player number
             int[][] playerInfo = OrderByMoney(GetPlayerInfo());
             List<int> winnerList = new List<int>();
 
+            //loop through all winners and add to a list
             for (int i = 0; playerInfo[0][0] == playerInfo[i][0] && i < numberOfPlayers; i++)
             {
                 winnerList.Add(playerInfo[i][1]);
                 Players[playerInfo[i][1]].HasWon = true;
             }
             return winnerList;
-        }
+        }//End EndChecks
 
         /// <summary>
         /// Orders a given jagged array in a descending
@@ -151,8 +172,12 @@ namespace HareAndTortoise {
                 sorted = !sortedWithErrors;
             }
             return info;
-        }
+        }//End OrderByMoney
 
+        /// <summary>
+        /// Writes all players money and player number to the multi-dimensional array for future use.
+        /// </summary>
+        /// <returns>an array containing players money and player number</returns>
         public static int[][] GetPlayerInfo()
         {
             int[][] info = InitialiseInfoArray();
@@ -162,8 +187,12 @@ namespace HareAndTortoise {
                 info[i][1] = i;
             }
             return info;
-        }
+        }//End GetPlayerInfo
 
+        /// <summary>
+        /// Initialises multi-dimensional array to be used in GetPlayerInfo method.
+        /// </summary>
+        /// <returns>array appropriately lengthed to suit number of players.</returns>
         public static int[][] InitialiseInfoArray()
         {
             int[][] info = new int[numberOfPlayers][];
@@ -173,8 +202,12 @@ namespace HareAndTortoise {
             } // end array initialisation
 
             return info;
-        }
+        }//End InitialiseInfoArray
 
+        /// <summary>
+        /// A for loop to run OutputIndividiualDetails.
+        /// makes sure all players have their information presented in the listbox.
+        /// </summary>
         public static void OutputAllPlayerDetails()
         {
             for (int i = 0; i < numberOfPlayers; i++)

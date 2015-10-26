@@ -44,6 +44,7 @@ namespace HareAndTortoise {
             }
         }//end SetUpGuiGameBoard()
 
+        //Maps all squares to the table in correct 'snaking' order
         private static void MapSquareToTablePanel(int number, out int column, out int row)
         {
             row = number / NUM_OF_COLUMNS;
@@ -72,6 +73,12 @@ namespace HareAndTortoise {
             gameBoardPanel.Size = new Size(desiredWidth, desiredHeight);
         } //end ResizeGameBoard
 
+        /// <summary>
+        /// Checks current player position and gets SquareControl of that position.
+        /// Checks if players should be added or removed and does so accordingly.
+        /// Redisplays GUI board after execution.
+        /// </summary>
+        /// <param name="create">A boolean parameter which allows a player to be added or removed in the method.</param>
         private void UpdatePlayerSquares(bool create) {
             int column;
             int row;
@@ -106,7 +113,7 @@ namespace HareAndTortoise {
 
         private void btnDice_Click(object sender, EventArgs e)
         {
-            DisableButton();
+            DiceButton();
         }
 
         private void OutputPlayersDetails()
@@ -120,6 +127,7 @@ namespace HareAndTortoise {
             HareAndTortoise_Game.Players.ResetBindings();
         }
 
+        //Opens a messagebox and checks if user is ready to exit the game.
         private void ExitGame()
         {
             DialogResult dialogresult = MessageBox.Show("Are you sure?", "Do you really want to exit?", MessageBoxButtons.YesNo);
@@ -137,7 +145,8 @@ namespace HareAndTortoise {
             ExitGame();
         }
 
-        private void DisableButton()
+        //plays one round and disables buttons and comboboxes during round / game.
+        private void DiceButton()
         {
             UpdatePlayerSquares(false);
             HareAndTortoise_Game.PlayOneRound();
@@ -145,6 +154,8 @@ namespace HareAndTortoise {
             UpdateDataGridView();
             comboBox1.Enabled = false;
 
+            //loops through all players and disables RollDice button if a player reaches the end. 
+            //Also enables combobox under same circumstances.
             for (int i = 0; i < HareAndTortoise_Game.Players.Count(); i++)
             {
                 Square playerSquare = HareAndTortoise_Game.Players[i].Location;
@@ -158,6 +169,11 @@ namespace HareAndTortoise {
 
         }
 
+        /// <summary>
+        /// Resets all players and variables used throughout the game and resets player position , money and winner status.
+        /// Restores control to the combobox and RollDice button and clears listbox.
+        /// Updates DataGridView.
+        /// </summary>
         private void ResetGame()
         {
             // Clears players from all squares
@@ -183,6 +199,7 @@ namespace HareAndTortoise {
             ResetGame();
         }
 
+        //Updates information based on combobox index
         private void comboBoxChanged()
         {
             //Clears all players from board
@@ -192,8 +209,10 @@ namespace HareAndTortoise {
             //Places players on board
             for (int i = 0; i < HareAndTortoise_Game.NumberOfPlayers; i++)
             {
+                //resets player position
                 HareAndTortoise_Game.Players[i].Location = Board.StartSquare();
             }
+            //clears listbox and enables RollDice button
             UpdatePlayerSquares(true);
             infoBox.Items.Clear();
             UpdateDataGridView();
