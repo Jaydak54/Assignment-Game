@@ -1,1 +1,3 @@
-# assignment4
+# Hare and Tortoise virtual board game
+
+This is an old assignment that I completed a few years ago.  It's a simple game, essentially snakes and ladders, made in C#.
